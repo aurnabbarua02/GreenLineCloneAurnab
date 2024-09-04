@@ -1,0 +1,16 @@
+.row{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+form {
+    font-size: small;
+}
+
+form input{
+    width: 100%;
+}
+form textarea{
+    height: 100px;
+    width: 100%;
+}

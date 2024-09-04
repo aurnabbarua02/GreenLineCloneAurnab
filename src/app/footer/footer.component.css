@@ -1,0 +1,52 @@
+.footer-upper{
+    background-color: #0b4a4f;
+    color: white;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+.footer-upper span{
+    color: #2dafb8;
+}
+.footer-upper p{
+    text-align: justify;
+    font-size: small;
+}
+h6{
+    padding-bottom: 20px;
+}
+.row{    
+    padding-left: 20px;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    position: relative;
+    font-size: small;
+    padding-bottom: 7px;
+}
+ul li span{
+    position: absolute; 
+    left: -25px;
+    color: white;
+}
+.footer-bottom{
+    background-color: #00312f;
+    color: white;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: rgb(6, 211, 6);
+}
+
+
+

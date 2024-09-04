@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'animate.css/animate.min.css';
+
+.active{
+    background-color: rgb(6, 211, 6);
+    color: white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.container{
+    background-color: white;
+    margin-bottom: 70px;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,47 @@
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-upper">
+            <div class="col-md-4 col-12">
+                <h6><span>| A</span>BOUT GREENLINE</h6>
+                <p>Green Line Paribahan is apparently a family owned
+                    transport company specializing in transportation of
+                    passenger bus services since 1990. From a humble beginning
+                    of local services, our transport system encompasses all reachable
+                    areas of Bangladesh and also beyond the border, extending our reach
+                    to Kolkata in India.</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <h6><span>| Q</span>UICK LINKS</h6>
+                <ul>
+                    @for (navitem of sharedNavItem.navitems; track navitem; let i = $index) {
+                    <li>
+                        <span>></span><a [ngClass]="{'active': sharedNavItem.selectedIndex === i}"
+                            (click)="sharedNavItem.setActive(i)" [routerLink]="sharedNavItem.getRouterLink(i)">{{
+                            navitem }}</a>
+                    </li>
+                    }
+
+                </ul>
+
+            </div>
+            <div class="col-md-4 col-12">
+                <h6><span>| A</span>DDRESS</h6>
+                <p>GreenLine Paribahan <br>
+                    9/2, Outer Circular Road, Momen Bagh, <br>
+                    Rajarbagh, Dhaka-1217 <br>
+                    Phone: 8315380 <br>
+                    Email: greenline2009&#64;gmail.com</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer-bottom">
+        <div style="float: left;">
+            <p>Copyright © 2024 GreenLine</p>
+        </div>
+        <div style="float: right;">
+            <p>All Right Reserved</p>
+        </div>
+    </div>
+</footer>

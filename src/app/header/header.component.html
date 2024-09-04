@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://greenlinebd.com/wp-content/uploads/2020/08/glp-logo.png"
+        width="70%" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        @for (navitem of sharedNavItem.navitems; track navitem; let i = $index) {
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="sharedNavItem.getRouterLink(i)" [ngClass]="{'active': sharedNavItem.selectedIndex === i}" (click)="sharedNavItem.setActive(i)">{{ navitem }}</a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,17 @@
+.row{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h6{
+    color: green;
+}
+p{
+    font-size: small;
+    text-align: justify;
+}
+ul{
+    padding-left: 30px;
+}
+li{
+    font-size: small;
+}

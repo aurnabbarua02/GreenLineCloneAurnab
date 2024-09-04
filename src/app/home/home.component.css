@@ -1,0 +1,69 @@
+.row{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.section0{
+    width: 100%;
+    height: 300px;
+}
+
+.section1{
+    margin-top: 20px;
+}
+h5{
+    text-align: center;
+    color: green;
+    padding-bottom: 10px;
+}
+.section1 p{
+    font-size: 12px;
+    text-align: justify;
+}
+.section2{
+    background-color: blueviolet;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;    
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 230px;
+}
+.section2 p{
+    text-align: center;
+    font-size: small;
+}
+.section2:hover{
+    background-color: green;
+    .clickMore{
+        visibility: visible;
+    }    
+}
+.clickMore{
+    border-radius: 50px;
+    visibility: hidden;
+    font-size: small;
+}
+.clickMore:hover{
+    background-color: black;
+    color: white;
+}
+.section3{
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+.section3 p{
+    font-size: small;
+    color: green;
+}
+.section3 select{
+    width: 80%;
+    font-size: small;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.section3 img{
+    width: 80%;
+    padding-bottom: 10px;
+}

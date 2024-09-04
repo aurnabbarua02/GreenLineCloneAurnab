@@ -1,0 +1,11 @@
+.row{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+h6{
+    color: green;
+}
+p{
+    font-size: small;
+    text-align: justify;
+}

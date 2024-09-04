@@ -1,0 +1,70 @@
+<div class="container">
+
+    <gallery [items]="images" class="section0" [thumb]="false" [autoPlay]="true" [counter]="false" [autoHeight]="false"
+        [imageSize]="'cover'"></gallery>
+
+    <div class="row section1">
+        <h5>Welcome To GreenLine</h5>
+        <p>Green Line Paribahan is apparently a family owned transport company specializing in transportation of
+            passenger bus services since 1990. From a humble beginning of local services, our transport system
+            encompasses all reachable areas of Bangladesh and also beyond the border, extending our reach to Kolkata in
+            India. <br>
+
+            We worked hard and honest, we put our vision forward and explored ways and means to continuously improve
+            passenger comfort, and as a result, we were able to introduce the 1st ever Air- Conditioned bus services in
+            Bangladesh. We take pride in mentioning that our fleet of buses includes the most luxurious models of VOLVO
+            and SCANIA Imported from Europe, which provide the ultimate in passenger comfort and safety. <br>
+
+            The company at present operates more then 60 (Sixty) buses on schedule routes employing over 200 trained
+            staff and safely transporting over a million passengers a year.</p>
+    </div>
+    <div class="row">
+        @for (section2 of section2_icon; track section2; let i = $index) {
+        <div class="col-md-3 col-6">
+            <div class="section2">
+                <mat-icon>{{ section2_icon[i] }}</mat-icon>
+                <h4>{{section2_header[i]}}</h4>
+                <p>{{section2_description[i]}}</p>
+                <button class="clickMore" [routerLink]="sharedNavItem.getRouterLink(i+1)"
+                    (click)="sharedNavItem.setActive(i+1)">Read more</button>
+            </div>
+        </div>
+        }
+    </div>
+    <div class="row section3">
+        <div class="col-md-6 col-12">
+            <h5>City Counter List</h5>
+            <p>Please choose your counter to view full address and contact no.</p>
+            <select (change)="onSelectChange($event)">
+                <option>Select Please</option>
+                @for (counter of counters; track counter; let i = $index) {
+                <option [value]="counter">{{ counter }}</option>
+                }
+               
+            </select>
+        </div>
+        <div class="col-md-6 col-12">
+            <h5>Our Fleets</h5>
+            <div class="row">
+                <div class="col-6">
+                    <img src="https://greenlinebd.com/wp-content/uploads/2020/08/scania_logo.png" alt="">
+
+                </div>
+                <div class="col-6">
+                    <img src="https://greenlinebd.com/wp-content/uploads/2020/08/volvo_logo-1.png" alt="">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="https://greenlinebd.com/wp-content/uploads/2020/08/logo_man.png" alt="">
+
+                </div>
+                <div class="col-6">
+                    <img src="https://greenlinebd.com/wp-content/uploads/2020/08/mv-greenline.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
